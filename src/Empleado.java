@@ -34,4 +34,8 @@ public abstract double calcularSalario();
     public void setSalarioBase(double salarioBase) {
         this.salarioBase = salarioBase;
     }
+
+    public String mostrarInformacion(){
+        return String.format("Empleado llamado %s con id %s que gana %f",getNombre(),getId(),calcularSalario());
+    }
 }
